@@ -8,7 +8,7 @@ function drawTriangle(height, symbol) {
     }
 }
 function reverseTriangle(height, symbol) {
-    for (let i = heigh; i >= 1; i--) {
+    for (let i = height; i >= 1; i--) {
         let row = "";
         for (let j = 0; j < i; j++) {
             row = row + symbol;
