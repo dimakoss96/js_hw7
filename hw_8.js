@@ -1,11 +1,11 @@
 function notNumber(value) {
-    if (value == null) {         // If the parameter value is equal to null, then it is not a number
+    if (value == null) {                    // If the parameter value is equal to null, then it is not a number
         return true;
     }
-    if (typeof value === 'boolean') {            // If the parameter type is boolean, then it is not a number
+    if (typeof value === 'boolean') {       // If the parameter type is boolean, then it is not a number
         return true;
     }
-    let number = +value;                // Conversion to a number
+    let number = +value;           // Conversion to a number
     // Check whether the variable number is a NaN value.
     if (number !== number) {
         return true;
@@ -13,8 +13,8 @@ function notNumber(value) {
         return false;
     }
 }
-let result = notNumber("example"); // Passing the value 'example' to the function
-console.log(result);             // Displaying the result of the function's operation
+let result = notNumber("example");  // Passing the value 'example' to the function
+console.log(result);                               // Displaying the result of the function's operation
 let result1 = notNumber("1");
 console.log(result1);
 let result2 = notNumber("NaN");
